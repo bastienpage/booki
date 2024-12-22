@@ -2,13 +2,170 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="styles.css" rel="stylesheet">
+    <title>Booki, Page d'accueil</title>
 </head>
 <body>
+<div class="sr-only">
+    <nav>
+        <ul>
+            <li><a href="#main">Aller au contenu principal</a></li>
+        </ul>
+    </nav>
+</div>
+<header role="banner">
+    <nav>
+        <ul>
+            <li><a href="#location">Hébergements</a></li>
+            <li><a href="#activity">Activités</a></li>
+        </ul>
+    </nav>
+    <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+    <p>En plein centre-ville ou en pleine nature</p>
+
+    <form action="">
+        <label class="sr-only" for="city">
+            Destination souhaitée
+        </label>
+        <input id="city" name="city" type="text">
+
+        <fiedset>
+            <legend>Filtres</legend>
+            <input id="price" name="price" type="checkbox">
+            <label for="price">Economique</label>
+            <input id="family" name="family" type="checkbox">
+            <label for="family">Familial</label>
+            <input id="romantique" name="romantique" type="checkbox">
+            <label for="romantique">Romantique</label>
+            <input id="fire" name="fire" type="checkbox">
+            <label for="fire">Nos pépites</label>
+        </fiedset>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+    </form>
+</header>
+<main id="main" role="main" tabindex="-1">
+    <section>
+        <h2>Les plus populaires</h2>
+        <ul>
+            <li>
+                <img alt="" src="medias/images/location/emile-guillemot.jpg">
+                <h3><a href="#">Hôtel Le Soleil du matin</a></h3>
+                <p>Nuit à partir de 128€</p>
+                <div>Note</div>
+            </li>
+            <li>
+                <img alt="" src="medias/images/location/aw-creative.jpg">
+                <h3><a href="#">Chambres d’hôtes Au cœur de l’eau</a></h3>
+                <p>Nuit à partir de 71€</p>
+                <div>Note</div>
+            </li>
+            <li>
+                <img alt="" src="medias/images/location/febrian-zakaria2.jpg">
+                <h3><a href="#">Hôtel Bleu et Blanc</a></h3>
+                <p>Nuit à partir de 68€</p>
+                <div>Note</div>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Hébergements à Marseille</h2>
+        <ul>
+            <li>
+                <img alt="" src="medias/images/location/fred-kleber.jpg">
+                <h3><a href="#">Hôtel du port</a></h3>
+                <p>Nuit à partir de 52€</p>
+                <div>Note</div>
+            </li>
+            <li>
+                <img alt="" src="medias/images/location/febrian-zakaria.jpg">
+                <h3><a href="#">Hôtel Chez Amina</a></h3>
+                <p>Nuit à partir de 96€</p>
+                <div>Note</div>
+            </li>
+            <li>
+                <img alt="" src="medias/images/location/reisetopia.jpg">
+                <h3><a href="#">Hôtel les mouettes</a></h3>
+                <p>Nuit à partir de 76€</p>
+                <div>Note</div>
+            </li>
+            <li>
+                <img alt="" src="medias/images/location/annie-spratt.jpg">
+                <h3><a href="#">Hôtel de la mer</a></h3>
+                <p>Nuit à partir de 46€</p>
+                <div>Note</div>
+            </li>
+            <li>
+                <img alt="" src="medias/images/location/marcus-loke.jpg">
+                <h3><a href="#">Auberge La Cannebière</a></h3>
+                <p>Nuit à partir de 25€</p>
+                <div>Note</div>
+            </li>
+            <li>
+                <img alt="" src="medias/images/location/nicate-lee.jpg">
+                <h3><a href="#">Auberge Le Panier</a></h3>
+                <p>Nuit à partir de 23€</p>
+                <div>Note</div>
+            </li>
+        </ul>
+        <a href="#">Afficher plus</a>
+    </section>
+    <section>
+        <h2>Activités à Marseilles</h2>
+        <ul>
+            <li>
+                <img alt="" src="medias/images/activity/reno-laithienne.jpg">
+                <h3><a href="#">Vieux-port</a></h3>
+            </li>
+            <li>
+                <img alt="" src="medias/images/activity/paul-hermann.jpg">
+                <h3><a href="#">Fort de Pomègues</a></h3>
+            </li>
+            <li>
+                <img alt="" src="medias/images/activity/kilyan-sockalingum.jpg">
+                <h3><a href="#">Parc national des Calanques</a></h3>
+            </li>
+            <li>
+                <img alt="" src="medias/images/activity/florian-wehde.jpg">
+                <h3><a href="#">Notre-Dame-de-la-Garde</a></h3>
+            </li>
+        </ul>
+    </section>
+</main>
+<footer role="contentinfo">
+    <div>
+        <h2>A propos</h2>
+        <ul>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+    </div>
+    <div>
+        <h2>A propos</h2>
+        <ul>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+    </div>
+    <div>
+        <h2>Nos hébergements</h2>
+        <ul>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Proposer votre hôtel</a></li>
+        </ul>
+    </div>
+    <div>
+        <h2>Assistance</h2>
+        <ul>
+            <li><a href="#">Centre d’aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
+        </ul>
+    </div>
+</footer>
 
 </body>
 </html>
