@@ -70,10 +70,82 @@ h1, h2 {
     font-weight: 700;
 }
 
+.activity {
+    padding: 1.875rem;
+    margin-block-end: 2.187rem;
+}
+
+.activity h2 {
+    margin-block-end: 1.875rem;
+}
+
+.activity ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.937rem;
+}
+
+.card__activity {
+    width: 100%;
+    border-radius: 1.25rem;
+    position: relative;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__activity__thumbnail {
+    aspect-ratio: 315/141;
+    border-radius: 1.25rem 1.25rem 0 0
+}
+
+.card__activity__title {
+    font-weight: 700;
+    padding: 1.25rem;
+    font-size: 1rem;
+    margin: auto 0;
+}
+
+.card__activity__title a {
+    text-decoration: none;
+}
+
+.card__activity__title a::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .activity ul {
+        gap: 1.875rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card__activity__thumbnail {
+        aspect-ratio: 210/200;
+    }
+
+    .card__activity__title {
+        padding: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card__activity__thumbnail {
+        aspect-ratio: 210/380;
+    }
+}
+
 .footer {
     background-color: var(--grey-200);
     padding: 1.875rem;
     width: 100%;
+}
+
+.footer h2 {
+    font-size: 1.125rem;
 }
 
 .footer__bloc:not(:last-child) {
@@ -108,7 +180,7 @@ h1, h2 {
     transform: scaleX(1);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .footer {
         display: flex;
         justify-content: space-between;
