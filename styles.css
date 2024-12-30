@@ -15,6 +15,7 @@ img, picture, video, canvas, svg {
 ul, ol {
     margin: 0;
     padding: 0;
+
 }
 
 ul li, ol li {
@@ -68,6 +69,94 @@ body {
 h1, h2 {
     font-size: 1.375rem;
     font-weight: 700;
+}
+
+.show-more {
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-decoration: none;
+}
+
+.location {
+    padding: 1.875rem;
+    margin-block-end: 2.187rem;
+}
+
+.location__title {
+    margin-block-end: 0.937rem
+}
+
+.location__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.937rem;
+    margin-block-end: 0.937rem
+}
+
+.card__location {
+    width: 100%;
+    border-radius: 1.25rem;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    position: relative;
+    padding-block-end: 0.937rem;
+}
+
+.card__location__thumbnail {
+    border-radius: 1.25rem 1.25rem 0 0;
+    padding: 5px;
+    aspect-ratio: 335/124;
+}
+
+.card__location__title {
+    font-weight: 700;
+    font-size: 1rem;
+    padding-inline: 0.937rem;
+}
+
+.card__location__title a {
+    text-decoration: none;
+}
+
+.card__location__title a::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+
+.card__location__price {
+    font-size: 0.875rem;
+    padding-inline: 0.937rem;
+    margin-block: 0.5rem;
+}
+
+.card__location__rating {
+    padding-inline: 0.937rem;
+
+}
+
+.card__location__rating span {
+    display: flex;
+    width: fit-content;
+    gap: 3px;
+}
+
+@media screen and (min-width: 768px) {
+    .location {
+        background: var(--grey-200);
+        border-radius: 1.25rem;
+        padding: 1.875rem;
+        margin-block-end: 3.125rem;
+    }
+
+    .location__list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.875rem;
+        margin-block-end: 1.875rem;
+    }
+
+    .card__location__thumbnail {
+        aspect-ratio: 268/124;
+    }
 }
 
 .activity {
